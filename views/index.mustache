@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annonces Immobilières</title>
+</head>
+<body>
+  <h1>Annonces Immobilières</h1>
+  <ul>
+    {{#annonces}}
+    <li>
+      <h2>{{titre}}</h2>
+      <p>{{description}}</p>
+      <p><strong>{{prix}} €</strong> - {{ville}}</p>
+    </li>
+    {{/annonces}}
+    {{^annonces}}
+    <li>Aucune annonce disponible.</li>
+    {{/annonces}}
+  </ul>
+</body>
+</html>
